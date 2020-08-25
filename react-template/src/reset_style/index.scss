@@ -1,0 +1,52 @@
+#root {
+    // min-width: 1200px;
+    // max-width: 1600px;
+    // margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.ant-layout-sider {
+    background: #fff;
+
+}
+
+.ant-btn-primary {
+    background-color: #3E78ED;
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+    color: #fff;
+    background-color: #3E78ED;
+    border-color: #3E78ED;
+}
+
+.ant-table-pagination {
+    li {
+        html body {
+            background-color: #f6f7fb;
+        }
+
+        .ant-table-pagination {
+            li {
+                border: none;
+            }
+
+            .ant-pagination-next,
+            .ant-pagination-prev {
+                a {
+                    border: none;
+                }
+            }
+        }
+    }
+}
+//宽度
+.Common-content{
+    min-width:1200px;
+    max-width:1600px;
+    margin:0 auto;
+    display: block;
+}

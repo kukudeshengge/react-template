@@ -1,0 +1,194 @@
+.list_box {
+  width: 100%;
+  p {
+    margin-bottom: 0;
+  }
+  .top_wai {
+    width: 100%;
+    min-height: 290px;
+    background: #ffffff;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+    .top {
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      .filter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        border-bottom: 1px solid #f2f2f2;
+        .left {
+          display: flex;
+          // align-items: center;
+          > span {
+            color: #333333;
+          }
+          > i {
+            color: #888888;
+            margin-left: 20px;
+            cursor: pointer;
+          }
+        }
+        .right {
+          color: #de2b2b;
+          cursor: pointer;
+        }
+      }
+      .classify {
+        width: 100%;
+        padding-top: 30px;
+        min-height: 170px;
+        .type{
+          width: 100%;
+          display: flex;
+            .active {
+              padding: 6px 10px !important;
+              background: rgba(222, 43, 43, 0.1);
+              border-radius: 3px;
+              color: #de2b2b;
+            }
+        }
+        .hot {
+          width: 100%;
+          display: flex;
+          min-height: 170px;
+          border-bottom: 1px solid #f2f2f2;
+        }
+        .left {
+          padding-top: 6px;
+          span {
+            color: #333333;
+            font-size: 14px;
+            font-weight: bold;
+          }
+          i {
+            display: inline-block;
+            color: #888888;
+            margin-left: 20px;
+          }
+        }
+        .right {
+          margin-left: 30px;
+          .right_list {
+            display: flex;
+            .item {
+              margin-right: 45px;
+              margin-bottom: 25px;
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+              &:hover {
+                color: #de2b2b;
+              }
+            }
+            .active {
+              padding: 6px 5px;
+              background: rgba(222, 43, 43, 0.1);
+              border-radius: 3px;
+              color: #de2b2b;
+            }
+          }
+        }
+      }
+      .search_box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        .left {
+          span {
+            color: #888888;
+            font-size: 14px;
+          }
+        }
+        .right {
+          .ant-input-search {
+            width: 428px;
+            height: 38px;
+            border-radius: 5px;
+            .ant-input {
+              background: #f4f4f4;
+              outline: none;
+              &::placeholder {
+                /* Mozilla Firefox 19+ */
+                color: #888888;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom_wai {
+    width: 100%;
+    background: #f6f7fb;
+    .vertical_j {
+      margin-bottom: 0;
+      span:not(:last-child)::after {
+        content: "|";
+        margin: 0px 7px;
+        color: #333333;
+        position: relative;
+        bottom: 1px;
+      }
+    }
+    .bottom {
+      width: 1200px;
+      padding-top: 73px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      .item {
+        width: 251px;
+        margin-right: 65px;
+        margin-bottom: 45px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+        &:hover{
+          .none {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            background-image: url("../../../../assets/img/resource_center/play.png");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            height: 130px;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+          }
+        }
+        .top {
+          width: 251px;
+          position: relative;
+          img {
+            width: 251px;
+            height: 130px;
+            border-radius: 5px;
+          }
+        }
+        .content {
+          width: 251px;
+          h2 {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 12px 0px;
+            color: #2a283d;
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

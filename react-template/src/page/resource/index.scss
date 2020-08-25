@@ -1,0 +1,16 @@
+.resource_main {
+  width: 100%;
+  height: 100%;
+  .resource_header{
+      width: 100%;
+      height: 56px;
+  }
+  .resource_footer{
+      width: 100%;
+      height: 280px;
+  }
+  .resource_container{
+      width: 100%;
+      min-height: calc(100vh - 336px);
+  }
+}
